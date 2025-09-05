@@ -12,13 +12,13 @@
       "heading": {
         "family": "Booton, sans-serif",
         "weight": 600,
-        "source": "/fonts/Booton-Semibold.woff2",
+        "source": "https://stytch-34ca0595.mintlify.app/fonts/Booton-Semibold.woff2",
         "format": "woff2"
       },
       "body": {
         "family": "Booton, sans-serif", 
         "weight": 400,
-        "source": "/fonts/Booton-Regular.woff2",
+        "source": "https://stytch-34ca0595.mintlify.app/fonts/Booton-Regular.woff2",
         "format": "woff2"
       }
     },
