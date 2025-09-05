@@ -1,0 +1,162 @@
+---
+title: "Stytch documentation"
+sidebarTitle: "Overview"
+mode: "wide"
+---
+
+<Columns cols={3}>
+  <Card title="Build right away" icon="circle-play" cta="Quickstart" href="/quickstart">
+    Guided tutorials on how to implement Stytch, supporting different frameworks and application stacks.
+  </Card>
+  <Card title="See examples" icon="image" cta="Example apps" href="/example-apps">
+    Sample apps that show how to authenticate users and manage sessions.
+  </Card>
+  <Card title="API & SDK references" icon="code" cta="API reference" arrow="true" href="/api-reference">
+    Reference documentation for the Stytch API and SDKs.
+  </Card>
+</Columns>
+
+## Learn the platform
+<Columns cols={2}>
+  <Card title="Authentication (AuthN)" icon="lock" horizontal>
+    Learn key concepts about Stytch authentication, picking a right data model, integrating, and managing sessions.
+  </Card>
+  <Card title="Authorization (AuthZ)" icon="lock" horizontal>
+    Cover user authorization and provisioning needs, such as adding SCIM or RBAC to your application.
+  </Card>
+  <Card title="Enterprise-ready" icon="lock" horizontal>
+    Auth for Organizations takes an enterprise-first approach to authentication to give your customers ownership and control.
+  </Card>
+  <Card title="Fraud and security" icon="lock" horizontal>
+    Protect your application with bot detection, rate limiting, and reverse engineering protection.
+  </Card>
+  <Card title="Connect your data" icon="lock" horizontal>
+    Connected Apps enables other services—such as AI agents and partner apps—to securely connect to your application’s data.
+  </Card>
+  <Card title="Migration to live deployment" icon="lock" horizontal>
+    Best practices for migrations, zero-downtime roll outs, and monitoring event data.
+  </Card>
+</Columns>
+
+## Featured products
+
+<Columns cols={2}>
+  <Card title="Enterprise SSO & SCIM" icon="lock" horizontal>
+    SAML and OIDC-compliant authentication for organizations.
+  </Card>
+  <Card title="Admin Portal" icon="lock" horizontal>
+    Components for managing access and roles for users.
+  </Card>
+  <Card title="Connected Apps" icon="lock" horizontal>
+    Be an OAuth-compliant provider for AI agents or other apps.
+  </Card>
+  <Card title="Machine-to-Machine" icon="lock" horizontal>
+    Enable services to communicate with no human involvement.
+  </Card>
+  <Card title="Stytch UI" icon="lock" horizontal>
+    Customizable UI components for faster deployment.
+  </Card>
+</Columns>
+
+---
+
+export const Links = () => (
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+    {/* Need Help Section */}
+    <div>
+      <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-4">Need Help?</h3>
+      <div className="space-y-3">
+        <a href="#" className="flex items-center text-gray-600 hover:text-gray-900 hover:border-0 hover:no-underline transition-colors duration-200">
+          <svg className="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+          </svg>
+          Join our Slack
+        </a>
+        <a href="#" className="flex items-center text-gray-600 hover:text-gray-900 hover:border-0 hover:no-underline transition-colors duration-200">
+          <svg className="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+          </svg>
+          Email support
+        </a>
+        <a href="#" className="flex items-center text-gray-600 hover:text-gray-900 hover:border-0 hover:no-underline transition-colors duration-200">
+          <svg className="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clipRule="evenodd" />
+          </svg>
+          Developer forum
+        </a>
+      </div>
+    </div>
+
+    {/* Using Our Docs Section */}
+    <div>
+      <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-4">Using Our Docs</h3>
+      <div className="space-y-3">
+        <a href="#" className="flex items-center text-gray-600 hover:text-gray-900 hover:border-0 hover:no-underline transition-colors duration-200">
+          <svg className="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
+          </svg>
+          Glossary
+        </a>
+        <a href="#" className="flex items-center text-gray-600 hover:text-gray-900 hover:border-0 hover:no-underline transition-colors duration-200">
+          <svg className="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+          </svg>
+          LLM instructions
+        </a>
+      </div>
+    </div>
+
+    {/* Policies & Legal Section */}
+    <div>
+      <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-4">Policies & Legal</h3>
+      <div className="space-y-3">
+        <a href="#" className="flex items-center text-gray-600 hover:text-gray-900 hover:border-0 hover:no-underline transition-colors duration-200">
+          <svg className="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+          </svg>
+          Security & trust
+        </a>
+        <a href="#" className="flex items-center text-gray-600 hover:text-gray-900 hover:border-0 hover:no-underline transition-colors duration-200">
+          <svg className="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zM3 15a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1H4a1 1 0 01-1-1v-1zm8-4a1 1 0 011-1h1a1 1 0 011 1v4a1 1 0 01-1 1h-1a1 1 0 01-1-1v-4zm4-3a1 1 0 011-1h1a1 1 0 011 1v7a1 1 0 01-1 1h-1a1 1 0 01-1-1V8z" clipRule="evenodd" />
+          </svg>
+          Platform policies
+        </a>
+        <a href="#" className="flex items-center text-gray-600 hover:text-gray-900 hover:border-0 hover:no-underline transition-colors duration-200">
+          <svg className="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2.94 6.412A2 2 0 002 8.108V16a2 2 0 001.8 1.99l.2.01h12a2 2 0 002-2V8.108a2 2 0 00-.94-1.696l-6-3.75a2 2 0 00-2.12 0l-6 3.75z" />
+          </svg>
+          Message deliverability
+        </a>
+      </div>
+    </div>
+
+    {/* Product Updates Section */}
+    <div>
+      <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-4">Product Updates</h3>
+      <div className="space-y-3">
+        <a href="#" className="flex items-center text-gray-600 hover:text-gray-900 hover:border-0 hover:no-underline transition-colors duration-200">
+          <svg className="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.894A1 1 0 0018 16V3z" clipRule="evenodd" />
+          </svg>
+          System status
+        </a>
+        <a href="#" className="flex items-center text-gray-600 hover:text-gray-900 hover:border-0 hover:no-underline transition-colors duration-200">
+          <svg className="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z" clipRule="evenodd" />
+          </svg>
+          View changelog
+        </a>
+        <a href="#" className="flex items-center text-gray-600 hover:text-gray-900 hover:border-0 hover:no-underline transition-colors duration-200">
+          <svg className="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clipRule="evenodd" />
+          </svg>
+          Follow our roadmap
+        </a>
+      </div>
+    </div>
+  </div>
+)
+
+<Links />

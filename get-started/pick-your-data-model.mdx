@@ -1,0 +1,42 @@
+---
+title: 'Pick your data model'
+---
+
+import { organization, member } from '/snippets/glossary.mdx';
+
+Customer identity is inherently different in B2B vs Consumer applications. In consumer applications, users are the sole owners of their accounts and are in control of their identity and how they authenticate.
+
+In B2B applications, the business account owner (or <Tooltip tip={organization}>organization</Tooltip>) is in control of who (<Tooltip tip={member}>members</Tooltip>) can access their instance, how they authenticate, and what they can do within that instance. The organization is ultimately in control of the identity of all of the end users who access their instance.
+
+In order to account for the significant differences in expected behavior and requirements between these two application types, Stytch offers distinct product suites for B2B and consumer – each precision tailored to the unique dynamics and future edge cases that occur in each space.
+
+The core distinction between these two product suites stems from the data models, which reflect the dynamic of “who owns this user” discussed above.
+
+## Stytch data models
+
+<Tabs>
+  <Tab title="B2B SaaS">
+    <img 
+      className="block dark:hidden" 
+      src="/images/get-started/b2b-data-model.svg" 
+      alt="B2B data model"
+    />
+    <img 
+      className="hidden dark:block" 
+      src="/images/get-started/b2b-data-model-dark.svg" 
+      alt="B2B data model"
+    />
+  </Tab>
+  <Tab title="Consumer">
+    <img 
+      className="block dark:hidden" 
+      src="/images/get-started/b2c-data-model.svg" 
+      alt="B2C data model"
+    />
+    <img 
+      className="hidden dark:block" 
+      src="/images/get-started/b2c-data-model-dark.svg" 
+      alt="B2C data model"
+    />
+  </Tab>
+</Tabs>

@@ -1,108 +1,45 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "$schema": "https://leaves.mintlify.com/schema/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Stytch Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#1D1D1D",
+    "light": "#F2F0EE",
+    "dark": "#000000"
+  },
+  "styling": {
+    "fonts": {
+      "heading": {
+        "family": "Booton, sans-serif",
+        "weight": 600,
+        "source": "/fonts/Booton-Semibold.woff2",
+        "format": "woff2"
+      },
+      "body": {
+        "family": "Booton, sans-serif", 
+        "weight": 400,
+        "source": "/fonts/Booton-Regular.woff2",
+        "format": "woff2"
+      }
+    },
+    "customCSS": ["styles.css"]
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
+    "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Contact us",
+        "href": "https://stytch.com/contact"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://stytch.com/get-started"
     }
   },
   "contextual": {
@@ -117,11 +54,125 @@
      "vscode"
    ]
   },
+  "icons": {
+    "library": "lucide"
+  },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/stytchauth",
+      "github": "https://github.com/stytchauth",
+      "linkedin": "https://www.linkedin.com/company/stytch/"
     }
+  },
+
+
+
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Get started",
+        "pages": [
+          "get-started/overview",
+          "get-started/quickstart",
+          "get-started/pick-your-data-model",
+          "get-started/example-apps",
+          {
+            "group": "Guides",
+            "pages": [
+              {
+                "group": "Authentication",
+                "pages": [
+                  "get-started/guides/authentication"
+                ]
+              },
+              {
+                "group": "Authorization",
+                "pages": [
+                  "get-started/guides/authorization"
+                ]
+              },
+              {
+                "group": "Enterprise Ready",
+                "pages": [
+                  "get-started/guides/enterprise-ready"
+                ]
+              },
+              {
+                "group": "Fraud and Risk",
+                "pages": [
+                  "get-started/guides/fraud-and-risk"
+                ]
+              },
+              {
+                "group": "AI Agents and Apps",
+                "tag": "HOT",
+                "pages": [
+                  "get-started/guides/ai-agents-and-apps"
+                ]
+              },
+              {
+                "group": "Migration and Deployment",
+                "pages": [
+                  "get-started/guides/migration-and-deployment"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "For developers",
+            "pages": [
+              "get-started/for-developers/llm-instructions",
+              "get-started/for-developers/api-reference-link"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Auth for orgs",
+        "groups": []
+      },
+      {
+        "tab": "Consumer auth",
+        "groups": []
+      },
+      {
+        "tab": "Fraud & risk",
+        "groups": []
+      },
+      {
+        "tab": "Resources",
+        "groups": []
+      },
+      {
+        "tab": "API",
+        "groups": []
+      },
+      {
+        "tab": "Go to API & SDK reference",
+        "icon": "code",
+        "menu": [
+          {
+            "item": "B2B API",
+            "href": "https://stytch.com/docs/b2b/api"
+          },
+          {
+            "item": "Consumer API",
+            "href": "https://stytch.com/docs/api"
+          },
+          {
+            "item": "Fraud API",
+            "href": "https://stytch.com/docs/fraud/api"
+          },
+          {
+            "item": "Stytch CLI",
+            "href": "https://stytch.com/docs/cli"
+          },
+          {
+            "item": "Programmatic Workspace Actions",
+            "href": "https://stytch.com/docs/workspace-management"
+          }
+        ]
+      }
+    ]
   }
 }
