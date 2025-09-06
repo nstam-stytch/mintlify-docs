@@ -16,16 +16,18 @@
         "format": "woff2"
       },
       "body": {
-        "family": "Booton, sans-serif", 
+        "family": "Booton, sans-serif",
         "weight": 400,
         "source": "https://stytch-34ca0595.mintlify.app/fonts/Booton-Regular.woff2",
         "format": "woff2"
       }
     },
-    "customCSS": ["styles.css"]
+    "customCSS": [
+      "styles.css"
+    ]
   },
   "favicon": "/favicon.svg",
-    "logo": {
+  "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
@@ -44,15 +46,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "icons": {
     "library": "lucide"
@@ -64,9 +66,9 @@
       "linkedin": "https://www.linkedin.com/company/stytch/"
     }
   },
-
-
-
+  "interaction": {
+    "drilldown": false
+  },
   "navigation": {
     "tabs": [
       {
@@ -129,23 +131,707 @@
       },
       {
         "tab": "Auth for orgs",
-        "groups": []
+        "pages": [
+          "auth-for-orgs/overview",
+          {
+            "group": "Development",
+            "pages": [
+              {
+                "group": "Integration guides",
+                "pages": [
+                  "auth-for-orgs/development/integration-guides/overview",
+                  "auth-for-orgs/development/integration-guides/frontend-ui",
+                  "auth-for-orgs/development/integration-guides/frontend-headless",
+                  "auth-for-orgs/development/integration-guides/backend"
+                ]
+              },
+              {
+                "group": "Next.js",
+                "pages": [
+                  "auth-for-orgs/development/nextjs/routing",
+                  "auth-for-orgs/development/nextjs/authentication",
+                  "auth-for-orgs/development/nextjs/sessions"
+                ]
+              },
+              {
+                "group": "Stytch UI",
+                "pages": [
+                  "auth-for-orgs/development/stytch-ui/overview",
+                  "auth-for-orgs/development/stytch-ui/discovery-flow",
+                  "auth-for-orgs/development/stytch-ui/organization-flow"
+                ]
+              },
+              {
+                "group": "Migrations",
+                "pages": [
+                  "auth-for-orgs/development/migrations/overview",
+                  "auth-for-orgs/development/migrations/reconciling-data-models",
+                  "auth-for-orgs/development/migrations/migrating-user-data",
+                  "auth-for-orgs/development/migrations/additional-migration-considerations",
+                  "auth-for-orgs/development/migrations/zero-downtime-deployment",
+                  "auth-for-orgs/development/migrations/external-ids",
+                  "auth-for-orgs/development/migrations/migrating-from-consumer-to-b2b",
+                  "auth-for-orgs/development/migrations/exporting-from-stytch"
+                ]
+              },
+              "auth-for-orgs/development/custom-domains"
+            ]
+          },
+          {
+            "group": "Enterprise Ready",
+            "pages": [
+              {
+                "group": "RBAC",
+                "pages": [
+                  {
+                    "group": "Resources",
+                    "pages": [
+                      "auth-for-orgs/enterprise-ready/rbac/resources/overview",
+                      "auth-for-orgs/enterprise-ready/rbac/resources/stytch-default",
+                      "auth-for-orgs/enterprise-ready/rbac/resources/role-assignment"
+                    ]
+                  },
+                  {
+                    "group": "Integration Guides",
+                    "pages": [
+                      "auth-for-orgs/enterprise-ready/rbac/integration-guides/initial-setup",
+                      "auth-for-orgs/enterprise-ready/rbac/integration-guides/backend",
+                      "auth-for-orgs/enterprise-ready/rbac/integration-guides/headless"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "SCIM",
+                "pages": [
+                  {
+                    "group": "Resources",
+                    "pages": [
+                      "auth-for-orgs/enterprise-ready/scim/resources/overview",
+                      "auth-for-orgs/enterprise-ready/scim/resources/actions"
+                    ]
+                  },
+                  {
+                    "group": "Integration Guides",
+                    "pages": [
+                      "auth-for-orgs/enterprise-ready/scim/integration-guides/okta",
+                      "auth-for-orgs/enterprise-ready/scim/integration-guides/entra"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Organizations",
+                "pages": [
+                  "auth-for-orgs/enterprise-ready/organizations/org-settings",
+                  "auth-for-orgs/enterprise-ready/organizations/jit-provisioning"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Authentication",
+            "pages": [
+              {
+                "group": "Sessions",
+                "pages": [
+                  {
+                    "group": "Resources",
+                    "pages": [
+                      "auth-for-orgs/authentication/sessions/resources/overview",
+                      "auth-for-orgs/authentication/sessions/resources/jwts-vs-tokens",
+                      "auth-for-orgs/authentication/sessions/resources/using-jwts",
+                      "auth-for-orgs/authentication/sessions/resources/custom-claims",
+                      "auth-for-orgs/authentication/sessions/resources/custom-claim-templates"
+                    ]
+                  },
+                  {
+                    "group": "Integration Guides",
+                    "pages": [
+                      "auth-for-orgs/authentication/sessions/integration-guides/start-here",
+                      "auth-for-orgs/authentication/sessions/integration-guides/backend-guide",
+                      "auth-for-orgs/authentication/sessions/integration-guides/frontend-guide"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Single Sign On",
+                "pages": [
+                  {
+                    "group": "Resources",
+                    "pages": [
+                      "auth-for-orgs/authentication/sso/resources/overview",
+                      "auth-for-orgs/authentication/sso/resources/external-connections",
+                      "auth-for-orgs/authentication/sso/resources/standalone"
+                    ]
+                  },
+                  {
+                    "group": "Integration Guides",
+                    "pages": [
+                      "auth-for-orgs/authentication/sso/integration-guides/initial-setup",
+                      "auth-for-orgs/authentication/sso/integration-guides/provider-setup",
+                      "auth-for-orgs/authentication/sso/integration-guides/backend",
+                      "auth-for-orgs/authentication/sso/integration-guides/headless",
+                      "auth-for-orgs/authentication/sso/integration-guides/ui"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "OAuth",
+                "pages": [
+                  {
+                    "group": "Resources",
+                    "pages": [
+                      "auth-for-orgs/authentication/oauth/resources/overview",
+                      "auth-for-orgs/authentication/oauth/resources/auth-flows",
+                      "auth-for-orgs/authentication/oauth/resources/idps",
+                      "auth-for-orgs/authentication/oauth/resources/google-one-tap",
+                      "auth-for-orgs/authentication/oauth/resources/provider-setup"
+                    ]
+                  },
+                  {
+                    "group": "Integration Guides",
+                    "pages": [
+                      "auth-for-orgs/authentication/oauth/integration-guides/initial-setup",
+                      "auth-for-orgs/authentication/oauth/integration-guides/backend",
+                      "auth-for-orgs/authentication/oauth/integration-guides/headless",
+                      "auth-for-orgs/authentication/oauth/integration-guides/ui"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Connected Apps",
+                "pages": [
+                  "auth-for-orgs/authentication/connected-apps/overview",
+                  "auth-for-orgs/authentication/connected-apps/getting-started",
+                  "auth-for-orgs/authentication/connected-apps/getting-started-api",
+                  "auth-for-orgs/authentication/connected-apps/client-types",
+                  "auth-for-orgs/authentication/connected-apps/oauth-scopes",
+                  {
+                    "group": "Integration Guides",
+                    "pages": [
+                      "auth-for-orgs/authentication/connected-apps/integration-guides/existing-auth-system",
+                      "auth-for-orgs/authentication/connected-apps/integration-guides/mcp-server-overview",
+                      "auth-for-orgs/authentication/connected-apps/integration-guides/mcp-servers",
+                      "auth-for-orgs/authentication/connected-apps/integration-guides/ai-agents"
+                    ]
+                  },
+                  {
+                    "group": "Resources",
+                    "pages": [
+                      "auth-for-orgs/authentication/connected-apps/resources/consent-management",
+                      "auth-for-orgs/authentication/connected-apps/resources/custom-domains",
+                      "auth-for-orgs/authentication/connected-apps/resources/testing"
+                    ]
+                  }
+                ]
+              },
+              "auth-for-orgs/authentication/email-otp",
+              {
+                "group": "Magic Links",
+                "pages": [
+                  {
+                    "group": "Resources",
+                    "pages": [
+                      "auth-for-orgs/authentication/magic-links/resources/overview",
+                      "auth-for-orgs/authentication/magic-links/resources/protected-eml"
+                    ]
+                  },
+                  {
+                    "group": "Integration Guides",
+                    "pages": [
+                      "auth-for-orgs/authentication/magic-links/integration-guides/initial-setup",
+                      "auth-for-orgs/authentication/magic-links/integration-guides/backend",
+                      "auth-for-orgs/authentication/magic-links/integration-guides/headless",
+                      "auth-for-orgs/authentication/magic-links/integration-guides/ui"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Multi-Factor Authentication",
+                "pages": [
+                  {
+                    "group": "Resources",
+                    "pages": [
+                      "auth-for-orgs/authentication/mfa/resources/overview"
+                    ]
+                  },
+                  {
+                    "group": "Integration Guides",
+                    "pages": [
+                      "auth-for-orgs/authentication/mfa/integration-guides/initial-setup",
+                      "auth-for-orgs/authentication/mfa/integration-guides/backend",
+                      "auth-for-orgs/authentication/mfa/integration-guides/headless",
+                      "auth-for-orgs/authentication/mfa/integration-guides/ui"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Passwords",
+                "pages": [
+                  {
+                    "group": "Resources",
+                    "pages": [
+                      "auth-for-orgs/authentication/passwords/resources/overview",
+                      "auth-for-orgs/authentication/passwords/resources/strength-policy"
+                    ]
+                  },
+                  {
+                    "group": "Integration Guides",
+                    "pages": [
+                      "auth-for-orgs/authentication/passwords/integration-guides/ui"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Trusted Auth Tokens",
+                "pages": [
+                  "auth-for-orgs/authentication/trusted-auth-tokens/overview",
+                  "auth-for-orgs/authentication/trusted-auth-tokens/external-idps",
+                  "auth-for-orgs/authentication/trusted-auth-tokens/custom-factors"
+                ]
+              },
+              {
+                "group": "M2M Authentication",
+                "pages": [
+                  "auth-for-orgs/authentication/m2m/authenticate-client",
+                  "auth-for-orgs/authentication/m2m/rotate-secrets",
+                  "auth-for-orgs/authentication/m2m/import-clients"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Security",
+            "pages": [
+              {
+                "group": "DFP Protected Auth",
+                "pages": [
+                  "auth-for-orgs/security/dfp-protected-auth/overview",
+                  "auth-for-orgs/security/dfp-protected-auth/getting-started",
+                  "auth-for-orgs/security/dfp-protected-auth/handling-challenges"
+                ]
+              },
+              "auth-for-orgs/security/device-history/new-device-notifications"
+            ]
+          },
+          {
+            "group": "Testing",
+            "pages": [
+              "auth-for-orgs/testing/e2e-testing",
+              "auth-for-orgs/testing/sandbox-values"
+            ]
+          }
+        ]
       },
       {
         "tab": "Consumer auth",
-        "groups": []
+        "pages": [
+          "consumer-auth/overview",
+          {
+            "group": "Development",
+            "pages": [
+              {
+                "group": "Integration Approaches",
+                "pages": [
+                  "consumer-auth/development/implementation/full-stack-overview",
+                  "consumer-auth/development/implementation/frontend-pre-built-ui",
+                  "consumer-auth/development/implementation/frontend-headless",
+                  "consumer-auth/development/implementation/backend"
+                ]
+              },
+              {
+                "group": "Migrations",
+                "pages": [
+                  "consumer-auth/development/migrations/migration-overview",
+                  "consumer-auth/development/migrations/migrating-users-statically",
+                  "consumer-auth/development/migrations/migrating-users-dynamically",
+                  "consumer-auth/development/migrations/additional-migration-considerations",
+                  "consumer-auth/development/migrations/zero-downtime-deployment",
+                  "consumer-auth/development/migrations/external-ids",
+                  "consumer-auth/development/migrations/migrating-from-consumer-to-b2b",
+                  "consumer-auth/development/migrations/exporting-from-stytch"
+                ]
+              },
+              "consumer-auth/development/custom-domains"
+            ]
+          },
+          {
+            "group": "Authentication",
+            "pages": [
+              {
+                "group": "Sessions",
+                "pages": [
+                  "consumer-auth/authentication/sessions/using-sessions",
+                  "consumer-auth/authentication/sessions/examples",
+                  "consumer-auth/authentication/sessions/frontend-guide",
+                  "consumer-auth/authentication/sessions/custom-claims",
+                  "consumer-auth/authentication/sessions/custom-claim-templates",
+                  "consumer-auth/authentication/sessions/session-tokens-vs-jwts",
+                  "consumer-auth/authentication/sessions/using-jwts"
+                ]
+              },
+              {
+                "group": "Magic Links",
+                "pages": [
+                  {
+                    "group": "Email Magic Links",
+                    "pages": [
+                      "consumer-auth/authentication/magic-links/email-magic-links/api",
+                      "consumer-auth/magic-links/email-magic-links/sdk",
+                      "consumer-auth/magic-links/email-magic-links/replace-password-reset",
+                      "consumer-auth/authentication/magic-links/email-magic-links/invite-user",
+                      "consumer-auth/authentication/magic-links/email-magic-links/existing-auth",
+                      "consumer-auth/authentication/magic-links/email-magic-links/adding-pkce",
+                      "consumer-auth/authentication/magic-links/email-magic-links/redirect-routing"
+                    ]
+                  },
+                  {
+                    "group": "Embeddable Magic Links",
+                    "pages": [
+                      "consumer-auth/authentication/magic-links/embeddable-magic-links/api"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "MFA",
+                "pages": [
+                  "consumer-auth/authentication/mfa/overview",
+                  "consumer-auth/authentication/mfa/backend",
+                  "consumer-auth/authentication/mfa/frontend",
+                  "consumer-auth/authentication/mfa/remembered-device"
+                ]
+              },
+              "consumer-auth/authentication/mobile-biometrics",
+              {
+                "group": "M2M Authentication",
+                "pages": [
+                  "consumer-auth/authentication/m2m/authenticate-client",
+                  "consumer-auth/authentication/m2m/rotate-secrets",
+                  "consumer-auth/authentication/m2m/import-clients"
+                ]
+              },
+              {
+                "group": "OAuth",
+                "pages": [
+                  {
+                    "group": "Identity Providers",
+                    "pages": [
+                      "consumer-auth/authentication/oauth/identity-providers/overview",
+                      "consumer-auth/authentication/oauth/identity-providers/provider-setup"
+                    ]
+                  },
+                  "consumer-auth/authentication/oauth/api",
+                  "consumer-auth/authentication/oauth/sdk",
+                  "consumer-auth/authentication/oauth/email-behavior",
+                  "consumer-auth/authentication/oauth/adding-pkce"
+                ]
+              },
+              {
+                "group": "Connected Apps",
+                "pages": [
+                  "consumer-auth/authentication/connected-apps/overview",
+                  "consumer-auth/authentication/connected-apps/getting-started",
+                  "consumer-auth/authentication/connected-apps/getting-started-api",
+                  "consumer-auth/authentication/connected-apps/client-types",
+                  "consumer-auth/authentication/connected-apps/oauth-scopes",
+                  {
+                    "group": "Integration Guides",
+                    "pages": [
+                      "consumer-auth/authentication/connected-apps/integration-guides/existing-auth-system",
+                      "consumer-auth/authentication/connected-apps/integration-guides/mcp-server-overview",
+                      "consumer-auth/authentication/connected-apps/integration-guides/mcp-servers",
+                      "consumer-auth/authentication/connected-apps/integration-guides/mcp-servers-vercel",
+                      "consumer-auth/authentication/connected-apps/integration-guides/cli-app",
+                      "consumer-auth/authentication/connected-apps/integration-guides/ai-agents"
+                    ]
+                  },
+                  {
+                    "group": "Resources",
+                    "pages": [
+                      "consumer-auth/authentication/connected-apps/resources/custom-domains",
+                      "consumer-auth/authentication/connected-apps/resources/testing"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Passcodes",
+                "pages": [
+                  "consumer-auth/authentication/passcodes/api",
+                  "consumer-auth/authentication/passcodes/sdk",
+                  {
+                    "group": "Toll Fraud",
+                    "pages": [
+                      "consumer-auth/authentication/passcodes/toll-fraud/overview",
+                      "consumer-auth/authentication/passcodes/toll-fraud/guide"
+                    ]
+                  },
+                  "consumer-auth/authentication/passcodes/unsupported-countries"
+                ]
+              },
+              {
+                "group": "Passkeys & WebAuthn",
+                "pages": [
+                  {
+                    "group": "Passkeys",
+                    "pages": [
+                      "consumer-auth/authentication/passkeys/overview",
+                      "consumer-auth/authentication/passkeys/login-sdk"
+                    ]
+                  },
+                  {
+                    "group": "WebAuthn",
+                    "pages": [
+                      "consumer-auth/authentication/webauthn/api",
+                      "consumer-auth/authentication/webauthn/sdk"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Passwords",
+                "pages": [
+                  "consumer-auth/authentication/passwords/api",
+                  "consumer-auth/authentication/passwords/sdk",
+                  "consumer-auth/authentication/passwords/strength-policy",
+                  {
+                    "group": "Email Verification",
+                    "pages": [
+                      "consumer-auth/authentication/passwords/email-verification/overview",
+                      "consumer-auth/authentication/passwords/email-verification/before-password-creation",
+                      "consumer-auth/authentication/passwords/email-verification/after-password-creation"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "TOTP",
+                "pages": [
+                  "consumer-auth/authentication/totp/api",
+                  "consumer-auth/authentication/totp/sdk"
+                ]
+              },
+              {
+                "group": "Web3",
+                "pages": [
+                  "consumer-auth/authentication/web3/api",
+                  "consumer-auth/authentication/web3/sdk"
+                ]
+              },
+              {
+                "group": "Trusted Auth Tokens",
+                "pages": [
+                  "consumer-auth/authentication/trusted-auth-tokens/overview",
+                  "consumer-auth/authentication/trusted-auth-tokens/external-idps",
+                  "consumer-auth/authentication/trusted-auth-tokens/custom-factors"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Authorization",
+            "pages": [
+              {
+                "group": "RBAC",
+                "pages": [
+                  {
+                    "group": "Resources",
+                    "pages": [
+                      "consumer-auth/authorization/rbac/resources/overview",
+                      "consumer-auth/authorization/rbac/resources/role-assignment"
+                    ]
+                  },
+                  {
+                    "group": "Integration Guides",
+                    "pages": [
+                      "consumer-auth/authorization/rbac/integration-guides/initial-setup",
+                      "consumer-auth/authorization/rbac/integration-guides/backend",
+                      "consumer-auth/authorization/rbac/integration-guides/headless",
+                      "consumer-auth/authorization/rbac/integration-guides/legacy-rbac"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Security",
+            "pages": [
+              {
+                "group": "DFP Protected Auth",
+                "pages": [
+                  "consumer-auth/security/dfp-protected-auth/overview",
+                  "consumer-auth/security/dfp-protected-auth/getting-started",
+                  "consumer-auth/security/dfp-protected-auth/handling-challenges"
+                ]
+              },
+              "consumer-auth/security/new-device-notifications"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "consumer-auth/integrations/planetscale",
+              "consumer-auth/integrations/supabase",
+              "consumer-auth/integrations/feathery",
+              "consumer-auth/integrations/unit"
+            ]
+          },
+          {
+            "group": "Testing",
+            "pages": [
+              "consumer-auth/testing/e2e-testing",
+              "consumer-auth/testing/sandbox-values"
+            ]
+          }
+        ]
       },
       {
         "tab": "Fraud & risk",
-        "groups": []
+        "pages": [
+          "fraud-risk/overview",
+          {
+            "group": "Getting Started",
+            "pages": [
+              "fraud-risk/getting-started/dfp-api",
+              "fraud-risk/getting-started/dfp-protected-auth"
+            ]
+          },
+          {
+            "group": "Use Cases",
+            "pages": [
+              "fraud-risk/use-cases/overview",
+              {
+                "group": "Recipes",
+                "pages": [
+                  "fraud-risk/use-cases/recipes/remembered-device",
+                  "fraud-risk/use-cases/recipes/new-device-notifications",
+                  "fraud-risk/use-cases/recipes/block-countries"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              {
+                "group": "Device Fingerprinting",
+                "pages": [
+                  "fraud-risk/guides/device-fingerprinting/overview",
+                  "fraud-risk/guides/device-fingerprinting/fingerprints",
+                  {
+                    "group": "Verdicts",
+                    "pages": [
+                      "fraud-risk/guides/device-fingerprinting/verdicts/overview",
+                      "fraud-risk/guides/device-fingerprinting/verdicts/allow",
+                      "fraud-risk/guides/device-fingerprinting/verdicts/block",
+                      "fraud-risk/guides/device-fingerprinting/verdicts/challenge",
+                      "fraud-risk/guides/device-fingerprinting/verdicts/not-found"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Decisioning",
+                "pages": [
+                  "fraud-risk/guides/decisioning/overview",
+                  "fraud-risk/guides/decisioning/setting-rules",
+                  "fraud-risk/guides/decisioning/overriding-verdict-reasons",
+                  "fraud-risk/guides/decisioning/intelligent-rate-limiting"
+                ]
+              },
+              {
+                "group": "Enforcement",
+                "pages": [
+                  "fraud-risk/guides/enforcement/overview",
+                  {
+                    "group": "Protected Auth",
+                    "pages": [
+                      "fraud-risk/guides/enforcement/protected-auth/overview",
+                      "fraud-risk/guides/enforcement/protected-auth/handling-challenges"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Development",
+            "pages": [
+              {
+                "group": "Integration Steps",
+                "pages": [
+                  "fraud-risk/development/integration-steps/go-live-checklist",
+                  "fraud-risk/development/integration-steps/configure-custom-domains",
+                  "fraud-risk/development/integration-steps/add-external-metadata",
+                  "fraud-risk/development/integration-steps/test-your-integration",
+                  "fraud-risk/development/integration-steps/privacy-and-compliance"
+                ]
+              },
+              {
+                "group": "Reference",
+                "pages": [
+                  "fraud-risk/development/reference/warning-flags-verdict-reasons"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "tab": "Resources",
-        "groups": []
-      },
-      {
-        "tab": "API",
-        "groups": []
+        "pages": [
+          "resources/get-support",
+          "resources/changelog",
+          "resources/roadmap",
+          "resources/system-status",
+          {
+            "group": "Policies",
+            "pages": [
+              {
+                "group": "Message Deliverability",
+                "pages": [
+                  "resources/policies/message-deliverability/overview",
+                  "resources/policies/message-deliverability/email",
+                  "resources/policies/message-deliverability/sms-whatsapp"
+                ]
+              },
+              {
+                "group": "Platform",
+                "pages": [
+                  "resources/policies/platform/account-enumeration",
+                  "resources/policies/platform/supported-browsers",
+                  "resources/policies/platform/ip-validation",
+                  "resources/policies/platform/rate-limits",
+                  "resources/policies/platform/app-store-reviews",
+                  "resources/policies/platform/user-locks"
+                ]
+              },
+              {
+                "group": "Security & Trust",
+                "pages": [
+                  "resources/policies/security-and-trust/security",
+                  "resources/policies/security-and-trust/privacy",
+                  "resources/policies/security-and-trust/compliance"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Documentation",
+            "pages": [
+              "resources/glossary"
+            ]
+          }
+        ]
       },
       {
         "tab": "Go to API & SDK reference",
